@@ -12,7 +12,6 @@ const reviewForm = document.getElementById("review-form");
 let index = 0; // define index in global scope
 
 function renderMenu() {
-  const beerList = document.getElementById("beer-list");
   beerList.innerHTML = "";
   beerObjects.forEach((beer, i) => { // use i instead of index inside the forEach callback
     const li = document.createElement("li");
