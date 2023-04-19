@@ -19,18 +19,18 @@
 //   renderDescription();
 //   renderReviews();
 // }
-// getAllBeers();
-// //DOM manipulation
-// function renderMenu() {
-//   const beerList = document.getElementById("beer-list");
-//   beerList.innerHTML = "";
-//   for (const beer of beerObjects) {
-//     const li = document.createElement("li");
-//     li.textContent = beer.name;
-//     beerList.appendChild(li);
-//   }
-//   console.log(beerList);
-// }
+getAllBeers();
+//DOM manipulation
+function renderMenu() {
+  const beerList = document.getElementById("beer-list");
+  beerList.innerHTML = "";
+  for (const beer of beerObjects) {
+    const li = document.createElement("li");
+    li.textContent = beer.name;
+    beerList.appendChild(li);
+  }
+  console.log(beerList);
+}
 // function renderImage() {
 //   const beerImage = document.getElementById("beer-image");
 //   beerImage.src = `${beerObjects[0].image_url}`;
